@@ -1,0 +1,97 @@
+section {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 420px;
+}
+.menu {
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background: #B40404;
+    min-width: 420px;
+}
+.menu__item {
+    list-style: none;
+    padding-top: 20px;
+}
+.menu__link {
+    text-decoration: none;
+    color: #FFF;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.tile {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+.tile__box {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    overflow: hidden;
+}
+.tile__box img {
+    width: 100%;
+}
+.tile__text {
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 5px;
+    text-align: center;
+    min-height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.tile__link {
+    text-decoration: none;
+    color: #D8D8D8;
+}
+.tile__copy {
+    min-height: 60px;
+    margin-bottom: 0px;
+}
+.tile__link--button {
+    background-color: #74DF00;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.tile__link--button:hover {
+    text-decoration: underline;
+    color: #1C1C1C;
+    background-color: #4B8A08;
+}
+@media only screen and (min-width: 480px) {
+    /* Phone */    
+    .tile {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+}
+@media only screen and (min-width: 876px) {
+    /* Tablet */    
+    .tile {
+        width: 50%;
+        padding-bottom: 70%;
+    }
+    .tile__text {
+    	position: relative;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    /* Desktop */    
+    .tile {
+        width: 25%;
+        padding-bottom: 45%;
+    }
+}
