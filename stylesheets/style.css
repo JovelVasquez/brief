@@ -1,8 +1,17 @@
+@import url('reset.css');
+
+body {
+   background: #E6E6E6;
+   font: 10px 'Lucida Sans',sans-serif;
+}
 section {
     overflow: hidden;
     margin: 0 auto;
     max-width: 1200px;
     min-width: 420px;
+}
+h1{
+	font-size: 25px;
 }
 .menu {
     text-align: center;
@@ -54,7 +63,8 @@ section {
 }
 .tile__copy {
     min-height: 60px;
-    margin-bottom: 0px;
+    margin-top: 15px;
+    font-size: 12px;
 }
 .tile__link--button {
     background-color: #74DF00;
@@ -71,18 +81,12 @@ section {
     color: #1C1C1C;
     background-color: #4B8A08;
 }
-@media only screen and (min-width: 480px) {
-    /* Phone */    
-    .tile {
-        width: 100%;
-        padding-bottom: 100%;
-    }
-}
-@media only screen and (min-width: 876px) {
+
+@media only screen and (min-width: 720px) {
     /* Tablet */    
     .tile {
         width: 50%;
-        padding-bottom: 70%;
+        padding-bottom: 75%;
     }
     .tile__text {
     	position: relative;
